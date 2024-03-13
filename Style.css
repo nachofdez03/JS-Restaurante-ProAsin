@@ -1,0 +1,389 @@
+body {
+  height: 420vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 2fr 50fr 5fr;
+  border: 2px solid white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  background-color: black;
+  padding: 10px;
+}
+.nav {
+  display: flex;
+  background-color: black;
+  margin-left: auto;
+}
+.lista {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.nav li {
+  margin-right: 40px;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  font-size: 14.5px;
+}
+.logo__image {
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+
+.nav__lista li {
+  font-size: 10px;
+  margin-right: 6%;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 15%;
+}
+.nav {
+  width: 90%;
+}
+.main {
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: 25% 15% 7% 12% 21% 20%; /* Ajusta las proporciones según tus necesidades */
+}
+
+.main__image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.Secciones {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-family: "Playfair Display";
+}
+
+.Menu {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.1fr;
+}
+.menu__izquierda {
+  width: 100%;
+  height: 100%;
+}
+
+.menu__derecha {
+  width: 100%;
+  height: 100%;
+}
+
+.Nosotros {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #333;
+}
+.Texto {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.5;
+  align-items: center;
+  font-size: 25px;
+  color: orange;
+}
+
+.LionsDiv {
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
+}
+.Lions {
+  width: 30%;
+  height: 70%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.Formulario {
+  display: none; /* Ocultar el formulario por defecto */
+  background-color: #333;
+}
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* En Style.css */
+.row {
+  display: flex;
+}
+
+.category-image {
+  width: 50%; /* Establece un ancho máximo para las imágenes */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.category-list {
+  display: flex;
+  width: 33%;
+  align-items: center;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  margin-top: 5%;
+}
+
+/* Listado de productos */
+.card-product-list,
+.card-product-grid {
+  margin-bottom: 0;
+}
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.1rem;
+  margin-top: 10px;
+}
+.card-product-grid:hover {
+  -webkit-box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+  box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card-product-grid .img-wrap {
+  border-radius: 0.2rem 0.2rem 0 0;
+  height: 220px;
+}
+.card .img-wrap {
+  overflow: hidden;
+}
+
+.card-lg .img-wrap {
+  height: 280px;
+}
+.card-product-grid .img-wrap {
+  border-radius: 0.2rem 0.2rem 0 0;
+  height: 228px;
+  padding: 16px;
+}
+[class*="card-product"] .img-wrap img {
+  height: 100%;
+  max-width: 100%;
+  width: auto;
+  display: inline-block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.img-wrap {
+  text-align: center;
+  display: block;
+}
+.card-product-grid .info-wrap {
+  overflow: hidden;
+  padding: 18px 20px;
+}
+[class*="card-product"] a.title {
+  color: #faa541;
+  transition: 0.3s;
+  display: block;
+}
+[class*="card-product"] a.title:hover,
+[class*="card-product"] a.title:focus {
+  color: #e88006;
+  text-decoration: none;
+}
+.rating-stars {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+  clear: both;
+}
+.rating-stars li.stars-active {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.rating-stars li {
+  display: block;
+  text-overflow: clip;
+  white-space: nowrap;
+  z-index: 1;
+}
+.card-product-grid .bottom-wrap {
+  padding: 18px;
+  border-top: 1px solid #e4e4e4;
+}
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  color: #343a40;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.45rem 0.85rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #faa541;
+  border-color: #e88006;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  border-color: #e88006 !important;
+  background-color: #e88006 !important;
+}
+.bi {
+  color: #faa541;
+}
+.Laptop-style {
+  border: 2px solid red;
+}
+.Camera-style {
+  border: 2px solid green;
+}
+.Smartphone-style {
+  border: 2px solid blue;
+}
+.Tablet-style {
+  border: 2px solid #faa541;
+}
+
+.dish {
+  display: flex;
+}
+
+.izquierda {
+  display: flex;
+  justify-content: center;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fotoplato {
+  width: 20%;
+  height: auto;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.color {
+  background-color: white;
+}
+
+.contenedor-externo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+}
